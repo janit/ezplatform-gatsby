@@ -35,7 +35,7 @@ module.exports = {
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
         fieldName: "ezplatform",
         // Url to query from
-        url: "https://master-7rqtwti-qrv7toqohxw54.eu-4.platformsh.site/graphql",
+        url: "https://master-7rqtwti-qrv7toqohxw54.eu-4.platformsh.site/graphql?yolo=1337",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

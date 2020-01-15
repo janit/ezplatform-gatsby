@@ -18,7 +18,7 @@ const articles = ({ data }) => (
 )
 
 export const query = graphql`
-query MyQuery {
+query {
   ezplatform {
     content {
       articles(first: 10000) {

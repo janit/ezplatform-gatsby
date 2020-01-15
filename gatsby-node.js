@@ -11,7 +11,6 @@ const path = require(`path`)
 const slash = require(`slash`)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  // query content for WordPress posts
   const result = await graphql(`
         query AllArticles {
             ezplatform {
@@ -21,9 +20,6 @@ exports.createPages = async ({ graphql, actions }) => {
                             node {
                                 _content {
                                     id
-                                }
-                                body {
-                                    html5
                                 }
                             }
                         }

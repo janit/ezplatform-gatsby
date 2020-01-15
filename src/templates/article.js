@@ -8,10 +8,9 @@ import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="An article" />
+    <SEO title={data.ezplatform.content.article.title} />
     <h1>{data.ezplatform.content.article.title}</h1>
     {renderHTML(data.ezplatform.content.article.body.html5)}
-    <hr />
     <p><Link to="/articles">Article listing</Link></p>
   </Layout>
 )
